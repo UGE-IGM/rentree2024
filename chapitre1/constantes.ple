@@ -1,6 +1,37 @@
 
 
-title= Constantes 
+
+sandbox = "python"
+
+matchlist = :wc-match-list
+
+theories = [
+  { title: "Lien vers une ressource externe", url: "https://google.com" },
+  { title: "Lien vers une ressource interne", url: @copyurl readme.md }
+]
+
+hint = ["Aide 1", "Aide 2"]
+
+
+builder==#!lang=python
+
+
+int,float,bool,chaine
+mots = [
+    ("int", "1"),
+    ("float", "3.14"),
+    ("bool", "True"),
+    ("chaine", "Bonjour"),
+    ("tuple", "("bonjour", False, 123)"),
+]
+
+==
+
+
+
+
+
+title = Constantes 
 
 statement==
 
