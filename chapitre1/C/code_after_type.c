@@ -1,5 +1,7 @@
 
 
+/* code after typique */
+
 int main(int argc,char **argv){
  
 /* traitement des parametres d'appel avec saut du nom de l'executable */
