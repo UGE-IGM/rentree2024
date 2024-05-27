@@ -14,15 +14,22 @@ hint = ["Aide 1", "Aide 2"]
 
 
 builder==#!lang=python
+import random
+
+val_int = random.randint(0, 1000)
+val_float = random.uniform(0.100000, 0.999999)
+val_bool = random.randint(0, 1)
 
 
-int,float,bool,chaine
+for 
+
+# str(type(a)).split("'")[1]
 mots = [
-    ("int", "1"),
-    ("float", "3.14"),
+    ("int", randomint()),
+    ("float", val_float),
     ("bool", "True"),
-    ("chaine", "Bonjour"),
-    ("tuple", "("bonjour", False, 123)"),
+    ("string", "Bonjour"),
+    ("list", "[1, 2, 3]")
 ]
 
 ==
