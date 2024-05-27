@@ -1,6 +1,44 @@
 
 
-title= Constantes 
+
+sandbox = "python"
+
+matchlist = :wc-match-list
+
+theories = [
+  { title: "Lien vers une ressource externe", url: "https://google.com" },
+  { title: "Lien vers une ressource interne", url: @copyurl readme.md }
+]
+
+hint = ["Aide 1", "Aide 2"]
+
+
+builder==#!lang=python
+import random
+
+val_int = random.randint(0, 1000)
+val_float = random.uniform(0.100000, 0.999999)
+val_bool = random.randint(0, 1)
+
+
+for 
+
+# str(type(a)).split("'")[1]
+mots = [
+    ("int", randomint()),
+    ("float", val_float),
+    ("bool", "True"),
+    ("string", "Bonjour"),
+    ("list", "[1, 2, 3]")
+]
+
+==
+
+
+
+
+
+title = Constantes 
 
 statement==
 
