@@ -34,7 +34,7 @@ Qu'un identifiant ne contient que des caractères alphanumériques et le soulign
 4) Exercice sur l'ordre d'évaluation et la priorité des opérateurs. 
 Exemple:   a+b*c est il égale à (a+b)*c ou à a+(b*c)
 5) Exercice que contient la variable X après cette liste d'instruction.
-6) Rangez ces instructions pour que la variable X contiennne la valeur Z.
+6) Rangez ces instructions dans l'ordre pour que la variable X contiennne la valeur Z.
 
 
 
