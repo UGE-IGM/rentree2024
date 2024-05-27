@@ -1,0 +1,23 @@
+
+
+title= Constantes 
+
+statement==
+
+Nous avons besoin de constantes dans nos programmes, le nom des jours de la semaine par exemple. 
+
+Associez à chaque constante son type: int,float,bool,chaine, etc.
+
+==
+
+# un exercice d'association (Match list ou buble), ou un exercice qcm quelles sont les constantes 
+# de type TYPE permis celle ci 
+
+
+# Remarque votre exercice doit permettre de spécifier les types autorisés afin de régler la difficulté 
+# de l'exercice pensez à struct, liste, objet, set, dictionnaires etc
+# Qui ne seront pas imédiatement accessible aux etudiants débutants 
+
+
+
+

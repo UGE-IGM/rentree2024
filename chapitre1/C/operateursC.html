@@ -1,0 +1,95 @@
+<html>
+<body>
+	<h2>Associativité et priorité des opérateurs en C</h2>
+<table><thead>
+<tr>
+<th width="20%">Symbole</th>
+<th width="30%">Type d’opération</th>
+<th width="20%">Associativité</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[</code> <code>]</code> <code>(</code> <code>)</code> <code>.</code> <code>-&gt;</code><br><code>++</code><code>--</code> (suffixe)</td>
+<td>Expression</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><strong><code>sizeof</code></strong> <code>&amp;</code> <code>*</code> <code>+</code> <code>-</code> <code>~</code> <code>!</code><br><code>++</code><code>--</code> (préfixe)</td>
+<td>Unaire</td>
+<td>De droite à gauche</td>
+</tr>
+<tr>
+<td><em>casts de type</em></td>
+<td>Unaire</td>
+<td>De droite à gauche</td>
+</tr>
+<tr>
+<td><code>*</code> <code>/</code> <code>%</code></td>
+<td>Multiplicatif</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>+</code> <code>-</code></td>
+<td>Additive</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>&lt;&lt;</code> <code>&gt;&gt;</code></td>
+<td>Décalage au niveau du bit</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>&lt;</code> <code>&gt;</code> <code>&lt;=</code> <code>&gt;=</code></td>
+<td>Relationnel</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>==</code> <code>!=</code></td>
+<td>Égalité</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>Opération de bits AND</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>Opération de bits OR exclusive</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>|</code></td>
+<td>Opération de bits OR inclusive</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>AND logique</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>OR logique</td>
+<td>De gauche à droite</td>
+</tr>
+<tr>
+<td><code>? :</code></td>
+<td>Expression-conditionnelle</td>
+<td>De droite à gauche</td>
+</tr>
+<tr>
+<td><code>=</code> <code>*=</code> <code>/=</code> <code>%=</code><br><code>+=</code> <code>-=</code> <code>&lt;&lt;=</code> <code>&gt;&gt;=</code> <code>&amp;=</code><br><code>^=</code> <code>|=</code></td>
+<td>Affectation simple et composée</td>
+<td>De droite à gauche</td>
+</tr>
+<tr>
+<td><code>,</code></td>
+<td>Évaluation séquentielle</td>
+<td>De gauche à droite</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

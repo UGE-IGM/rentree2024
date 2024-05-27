@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Précédence et Associativité des Opérateurs JavaScript</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Précédence et Associativité des Opérateurs JavaScript</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Précédence</th>
+                <th>Opérateur</th>
+                <th>Description</th>
+                <th>Associativité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20</td>
+                <td>...</td>
+                <td>Opérateur de propagation</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>()</td>
+                <td>Parenthèses de groupement</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>new</td>
+                <td>Opérateur new (avec arguments)</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>.</td>
+                <td>Accès aux propriétés</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>[]</td>
+                <td>Accès aux propriétés par indice</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>()</td>
+                <td>Appel de fonction</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>new</td>
+                <td>Opérateur new (sans arguments)</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>++</td>
+                <td>Incrément postfixe</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>--</td>
+                <td>Décrément postfixe</td>
+                <td>n/a</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>++</td>
+                <td>Incrément préfixe</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>--</td>
+                <td>Décrément préfixe</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>+</td>
+                <td>Unaire plus</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>-</td>
+                <td>Unaire moins</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>~</td>
+                <td>Non binaire</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>!</td>
+                <td>Non logique</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>delete</td>
+                <td>Opérateur delete</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>typeof</td>
+                <td>Opérateur typeof</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>void</td>
+                <td>Opérateur void</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>**</td>
+                <td>Exponentiation</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>/</td>
+                <td>Division</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>%</td>
+                <td>Modulo</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>+</td>
+                <td>Addition</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>-</td>
+                <td>Soustraction</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&lt;&lt;</td>
+                <td>Décalage à gauche</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&gt;&gt;</td>
+                <td>Décalage à droite</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&gt;&gt;&gt;</td>
+                <td>Décalage à droite sans signe</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>&lt;</td>
+                <td>Inférieur à</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>&lt;=</td>
+                <td>Inférieur ou égal à</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>&gt;</td>
+                <td>Supérieur à</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>&gt;=</td>
+                <td>Supérieur ou égal à</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>instanceof</td>
+                <td>Instance de</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>in</td>
+                <td>Opérateur in</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>==</td>
+                <td>Égal à</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>!=</td>
+                <td>Différent de</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>===</td>
+                <td>Strictement égal à</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>!==</td>
+                <td>Strictement différent de</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>&amp;</td>
+                <td>ET binaire</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>^</td>
+                <td>OU exclusif binaire</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>|</td>
+                <td>OU binaire</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>&amp;&amp;</td>
+                <td>ET logique</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>||</td>
+                <td>OU logique</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>??</td>
+                <td>Opérateur de coalescence nulle</td>
+                <td>Gauche à droite</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>?:</td>
+                <td>Opérateur conditionnel</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Assignation</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>+=</td>
+                <td>Assignation avec addition</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>-=</td>
+                <td>Assignation avec soustraction</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>*=</td>
+                <td>Assignation avec multiplication</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>/=</td>
+                <td>Assignation avec division</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>%=</td>
+                <td>Assignation avec modulo</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>&lt;&lt;=</td>
+                <td>Assignation avec décalage à gauche</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>&gt;&gt;=</td>
+                <td>Assignation avec décalage à droite</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>&gt;&gt;&gt;=</td>
+                <td>Assignation avec décalage à droite sans signe</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>&amp;=</td>
+                <td>Assignation avec ET binaire</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>^=</td>
+                <td>Assignation avec OU exclusif binaire</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>|=</td>
+                <td>Assignation avec OU binaire</td>
+                <td>Droite à gauche</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>,</td>
+                <td>Opérateur virgule</td>
+                <td>Gauche à droite</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
