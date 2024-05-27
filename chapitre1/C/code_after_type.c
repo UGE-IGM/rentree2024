@@ -3,7 +3,9 @@
 /* code after typique */
 
 int main(int argc,char **argv){
-    int i; float f; char *s;
+    int i;
+    float f;
+    char *s;
     /* traitement des parametres d'appel avec saut du nom de l'executable */
     while (*++argv){
         /* parametre entier */
