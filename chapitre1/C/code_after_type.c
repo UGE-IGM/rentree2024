@@ -16,7 +16,7 @@ int main(int argc,char **argv){
         s = *argv;
 
         /* faire quelque chose */
-        student_fonction(i,f,s);
+        student_fonction(i);
     }
 
     /** utilisation de l'entrée standard */
