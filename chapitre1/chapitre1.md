@@ -13,7 +13,7 @@ Objectif que les étudiants soient capables de reconnaitre le type d'une constan
 
 ## Les expressions constantes 
 
-Objectif que les étudiants soient capables de calculer une expression constante et d'identifier sont type.
+Objectif que les étudiants soient capables de calculer une expression constante et d'identifier son type.
 
 ## les identifiants 
 
@@ -26,7 +26,7 @@ Qu'un identifiant ne contient que des caractères alphanumériques et le soulign
 
 ## Exercices sur les expressions  
 
-1) Quels sont les identifiant correctes (expresion rationnel: \[a-zA-z]\[a-zA-Z0-9]*)
+1) Quels sont les identifiant correctes (expression rationnel: \[a-zA-z]\[a-zA-Z0-9]*)
 1) Match list ou bubles entre des expressions et leur valeur. 
 2) Match list ou bubles entre des expressions et leur type.  
 3) Pour le C 
