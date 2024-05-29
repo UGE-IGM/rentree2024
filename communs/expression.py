@@ -49,7 +49,7 @@ for w in range(10):
 
 des_operations_unaires = ['sizeof', '-', '~', '!', '*', '&', '++', '--'] # il faut `casts de type` aussi
 
-des_operations_binaires = ['+', '*', '-', '*', '/', '//', '%']
+des_operations_binaires = ['+', '*', '-', '*', '/', '//', '%', '>>', '<<', ',']
 
 des_operations_comparaisons = ['<', '>', '<=', '>=', '==', '!=', '&&', '||']
 
@@ -57,6 +57,9 @@ des_operations_bit_a_bit = ['^', '&', '|', '']
 
 des_operations_affectations = ['=',  '*=', '/=', '%=', '+=', '-=', '<<=', '>>=', '&=', '^=', '|=']
 
+des_operations_expressions = ['[', ']','(', ')', '.', '->']
+
+une_operation_ternaire = f'%s ? %s : %s'
 
 # Exemple d'utilisation
 print(listexpr_C(10, des_operations_binaires, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
