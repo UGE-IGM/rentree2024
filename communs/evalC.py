@@ -3,14 +3,12 @@ import subprocess
 
 # Cree un expression cf expreesion
 
-exp = ' -3 + 5 '
 def evalC(exp):
     txt = f"""
 
     #include <stdio.h>
 
-
-    int main(int argc, char const *argv[])
+    int main(void)
     {{
         printf("%d",(int)({exp}));
         return 0;
@@ -18,12 +16,12 @@ def evalC(exp):
 
     """
 
-    with open("/tmp/code.c","w") as f:
+    with open("/tmp/code.c", "w") as f:
         f.write(txt)
 
-    subprocess.run(["gcc","code.c","-o","/tmp/exe"])
-    subprocess.run(["/tmp/exe"],stdout=open("val","w") )
-    with open("val","r") as f:
+    subprocess.run(["gcc","/tmp/code.c","-o","/tmp/exe"])
+    subprocess.run(["/tmp/exe"],stdout=open("/tmp/val","w") )
+    with open("/tmp/val","r") as f:
         val = int(f.read())
 
     return val
