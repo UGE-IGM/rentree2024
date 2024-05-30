@@ -14,7 +14,7 @@ def evalC(exp):
         int a = 0, b = 0, tab[10], i = 0, *p = NULL;
         char *chaine = "Bonjour";
         int len_chaine = strlen(chaine);
-        printf("%d",(int)({exp}));
+        printf("%d", (int)({exp}));
         return 0;
     }}
 

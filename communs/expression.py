@@ -28,7 +28,8 @@ def expression(op, *args):
         exp = str(choice(args)) + choice(op) + str(choice(args))
     else:
         exp = str(choice(args)) + choice(op) + str(choice(args)) + choice(op) + str(choice(args))
-    return exp, eval(exp)
+
+    return exp, round(eval(exp), 2)
 
 
 def listexpr(nb,op, *args):
@@ -48,13 +49,12 @@ def listexpr_C(nb,op, *args):
 
 def expression_C_avancee(op, *args):
     nbop = randint(2, 3)
-    nom_op, operation_random = choice(list(op.items()))
+    #nom_op, operation_random = choice(list(op.items()))
+    operation_random = op
 
 
-    print(nom_op)
-
-    if nom_op == 'binaire':
-        exp = str(choice(args)) + choice(operation_random) + str(choice(args)) + choice(operation_random) + str(choice(args))
+    #if nom_op == 'binaire':
+    exp = str(choice(args)) + choice(operation_random) + str(choice(args)) + choice(operation_random) + str(choice(args))
 
 
 
@@ -75,7 +75,6 @@ def main() -> None:
     for w in range(10):
         print(expression(['+', '-', '*', '/'], 1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 
-
     # en C:
 
     des_operations_unaires = ['sizeof', '-', '~', '!', '*', '&', '++', '--'] # il faut `casts de type` aussi
@@ -84,7 +83,7 @@ def main() -> None:
 
     des_operations_comparaisons = ['<', '>', '<=', '>=', '==', '!=', '&&', '||']
 
-    des_operations_bit_a_bit = ['^', '&', '|', '']
+    des_operations_bit_a_bit = ['^', '&', '|']
 
     des_operations_affectations = ['=',  '*=', '/=', '%=', '+=', '-=', '<<=', '>>=', '&=', '^=', '|=']
 
@@ -101,7 +100,7 @@ def main() -> None:
 
     # Exemple d'utilisation
     print(listexpr_C(10, des_operations_binaires, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
-    expression_C_avancee(all_operations, [i for i in range(1, 11)])
+    expression_C_avancee(des_operations_binaires, [i for i in range(1, 11)])
 
 
 
