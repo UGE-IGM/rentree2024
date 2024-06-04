@@ -38,12 +38,31 @@ Exemple:   a+b*c est il égale à (a+b)*c ou à a+(b*c)
 5) Exercice que contient la variable X après cette liste d'instruction.
 6) Rangez ces instructions dans l'ordre pour que la variable X contiennne la valeur Z.
 
+# Exercice sur les expressions conditionnelles 
+
+1) Intervales 
+2) Tableau de vérité
+3) Découpage du Plan, ensemble d'inégalités.
+
+
+# Idée d'exercices 
+
+1) scrabble : quel est le bonus de la case i,j fournir une image du terrain.
+2) master mind : on a un un groupe de 4 couleurs R,b,j,v avec 2 blanche et 1 noir, quelles sont les combinaisons qui ne peuvent pas être solution. L'exercice consiste a dire si une combinaison peut être une solution ou pas.
+3) L'age du capitaine. 
 
 
 
 # Expressions en langage C
 
-En langage de programmation C, les expressions sont des combinaisons de valeurs, variables, opérateurs et appels de fonctions qui sont évaluées pour produire un résultat. Voici un aperçu des différents types d'expressions que vous pouvez rencontrer en C :
+En langage de programmation C, les expressions sont des combinaisons de valeurs, variables, opérateurs et appels de fonctions qui sont évaluées pour produire un résultat. 
+
+Les expressions sont caractérisées par un type, une valeur et un effet de bord.
+
+L'expressions est évalué à l'exécution du programme et produit une valeur d'un certain type. L'effet de bord est le fait que le calcul de l'expression a pour effet de modifier le contenu de la mémoire ou d'effectuer un action sur l'extérieur.
+
+
+Voici un aperçu des différents familles d'expressions que vous pouvez rencontrer en C :
 
 ### 1. Expressions arithmétiques
 Les expressions arithmétiques utilisent des opérateurs arithmétiques pour effectuer des calculs sur des valeurs numériques.
