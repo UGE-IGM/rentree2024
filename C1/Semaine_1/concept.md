@@ -8,5 +8,13 @@ Quel sont les ligne de shell qui compilee et exécute un progeamme.c
 Template QCM 
 
 
+# Entre sortie scanf / printf 
+
+ecrie un fonct f qui fait un calcul 
+puis une fonction main qui lit un entier sur stdin et affiche (f(entier) sur stdout. 
+alea c'est le calcul fait par la fonction f : carré, cube, double, sqrt (-lm) 
+
+template soluce C 
 
 
+# Conditionnelles 
