@@ -1,6 +1,6 @@
 ## Exercices sur les expressions  
 
-1) Quels sont les identifiant correctes (expression rationnel: \[a-zA-z]\[a-zA-Z0-9]*)
+1) [IDENTIFIANTS] Quels sont les identifiant correctes (expression rationnel: \[a-zA-z]\[a-zA-Z0-9]*)
 2) Match list ou bubles entre des expressions et leur valeur. 
 3) Match list ou bubles entre des expressions et leur type.  
 4) Pour le C 
