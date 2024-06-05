@@ -18,3 +18,13 @@ template soluce C
 
 
 # Conditionnelles 
+
+
+    Intervales [3,4], ]5,6[, { 9 }  EXiste sur PL. interval 
+    
+    Tableau de vérité on a les valeurs des diffftes variables booleenes et on veux la formule booleenne. 
+      a,b,c,...  
+    
+    Découpage du Plan, ensemble d'inégalités.
+
+# 
