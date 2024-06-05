@@ -10,7 +10,7 @@ Template QCM
 
 # Entre sortie scanf / printf 
 
-ecrie un fonct f qui fait un calcul 
+ecrire une fonction f qui fait un calcul 
 puis une fonction main qui lit un entier sur stdin et affiche (f(entier) sur stdout. 
 alea c'est le calcul fait par la fonction f : carré, cube, double, sqrt (-lm) 
 
