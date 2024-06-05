@@ -1,0 +1,132 @@
+// Documentation disponibmatchlistle ici : #docs/main/doc/programing/exercise/langage
+
+
+// Choix de l'environnement d'exécution node ou python
+sandbox = "python"
+
+// Définition des champs de réponse : #docs/components/
+
+picker = :wc-picker
+
+
+// Affichage de documents théoriques : #docs/main/doc/programing/exercise/theories
+
+theories = [
+  { title: "Lien vers une ressource externe", url: "https://docs.python.org/fr/3/library/stdtypes.html" },
+  { title: "Lien vers une ressource interne", url: @copyurl readme.md }
+]
+
+// Affichage d'aides : #docs/main/doc/programing/exercise/hints
+
+hint = ["Faites attention aux guillemets, s'ils existent",
+        "Regarder le premier lien disponible dans Théorie"]
+
+// Construction, Affichage et Évaluation : #docs/main/doc/programing/exercise/workflow
+
+
+
+// ÀMELIORATIONS
+/*
+  Vous pouvez ajouter la possibilité d'intérdire à l'étudiant refaire l'exércice
+  après avoir raté (il doit être toujour possible de relancer mais s'il a raté, alors c'est 0 score)
+*/
+
+
+
+
+builder==#!lang=python
+import random
+
+random_entier = random.randint(0, 10000)
+random_float = random.uniform(0.09, 9999.99)
+random_bool = bool(random.getrandbits(1))
+random_char = random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
+random_string = random.choice(("\"Bonjour\"", "\"UGE\"", "\"Informatique\""))
+
+
+
+random_list = [
+                random_string, 
+                f"\"{random_entier}\"", random_entier,
+                f"\"{random_bool}\"", random_bool,
+                f"\"{random_float}\"", random_float,
+                f"\"{random_char}\""
+                ]
+
+all_types = ["str", "int", "float", "list", "tuple", "range", "dict", "set", "bool" ,"None"]
+
+
+"""
+  IN python3:
+  Text Type:			str
+  Numeric Types:	int, float, complex
+  Sequence Types:	list, tuple, range
+  Mapping Type:		dict
+  Set Types:			set, frozenset
+  Boolean Type:		bool
+  Binary Types:		bytes, bytearray, memoryview
+  None Type:			NoneType
+
+  les types qu'on ne veut pas utiliser: memoryview, frozenset, complex, bytes, bytearray
+"""
+
+
+random_choix = random.choice(random_list)
+
+# à modifier si vous voulez prendre plus ou moins
+random_types = random.sample(all_types, 5)
+
+if (str(type(random_choix)).split()[1][1:-2]) not in random_types:
+  random_types[-1] = (str(type(random_choix)).split()[1][1:-2])
+
+random.shuffle(random_types)
+
+picker['items'] =  random_types
+sol = str(type(random_choix)).split()[1][1:-2]
+
+# la solution
+bons_reponses = f"Le type de <b>{random_choix}</b> est <b>{str(type(random_choix)).split()[1][1:-2]}</b><br>"
+une_expression = f"<b>{random_choix}</b>"
+
+==
+
+
+grader==
+
+grade = 0
+
+count = 0
+
+feedback['type'] = "error"
+feedback['content'] = "Mauvaise réponse, votre score: "
+
+# // ce if serve à verifier si l'étudiant a choisi quelque chose
+# if not picker['selection']:
+#   raise Exception("Vous devez choisir quelque chose")
+
+if (picker['selection']):
+  if (picker['selection'] == sol):
+    grade = 100
+    feedback['type'] = "success"
+    feedback['content'] = "Bonne réponse, votre score: "
+
+
+feedback['content'] += f"{str(int(grade))} points"
+==
+
+
+title==
+Deviner le type de l'expression suivante:
+==
+
+statement ==
+{{une_expression}}
+==
+
+form==
+{{picker}}
+==
+
+solution==
+{{bons_reponses}}
+==
