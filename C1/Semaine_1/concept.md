@@ -1,7 +1,7 @@
 
 # le C est compilé 
 
-Quel sont les ligne de shell qui compilee et exécute un progeamme.c 
+Quel sont les ligne de shell qui compilee et exécute un programme.c 
 
 {compilo} {argument} \n {execution}
 
