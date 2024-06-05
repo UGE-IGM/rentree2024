@@ -16,3 +16,15 @@ Objectif que les étudiants soient capables de calculer une expression constante
 Comment différencier les mots clefs des identifants (par coeur).
 
 Qu'un identifiant ne contient que des caractères alphanumériques et le souligné, et ne commence pas par un chiffre.
+
+[a-zA-Z][a-zA-Z0-9]*
+
+Bien choisir les noms 
+Bien choisir les noms 
+## La Pile et le Tas
+
+Qu-est ce que la pile ? Qu-est ce que el tas ?
+
+## La notion d'état
+
+Objectif que les étudiants soient capable de comprendre les étap
