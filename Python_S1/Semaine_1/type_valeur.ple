@@ -28,15 +28,6 @@ hint = ["Faites attention aux guillemets, s'ils existent",
 
 
 
-// ÀMELIORATIONS
-/*
-  Vous pouvez ajouter la possibilité d'intérdire à l'étudiant refaire l'exércice
-  après avoir raté (il doit être toujour possible de relancer mais s'il a raté, alors c'est 0 score)
-*/
-
-
-
-
 builder==#!lang=python
 import random
 
@@ -80,15 +71,8 @@ all_types = ["str", "int", "float", "list", "bool" ,"NoneType"]
 
 random_choix = random.choice(random_list)
 
-# à modifier si vous voulez prendre plus ou moins
-random_types = random.sample(all_types, 4)
 
-# if (str(type(random_choix)).split()[1][1:-2]) not in random_types:
-#   random_types[-1] = (str(type(random_choix)).split()[1][1:-2])
-
-
-
-RadioGroup['items'] =  all_types
+RadioGroup['items'] = all_types
 sol = str(type(random_choix)).split()[1][1:-2]
 
 # la solution
@@ -99,7 +83,6 @@ une_expression = f"<b>{random_choix}</b>"
 plusgrade = sum([ 1 if x == 100 else 0 for x in meta['grades'] ])
 
 statement=  f"<b>{random_choix}</b> <br/> Tentatives {nsucc}/{ntry}"
-
 ==
 
 ntry = 0
