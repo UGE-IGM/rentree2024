@@ -39,3 +39,5 @@
 4. **[PREMIER4]** Écrivez la fonction premier4(n) renvoyant **True** si le naturel n donné est premier et False sinon, en cherchant un diviseur entre 2 et sqrt(n). En regardant si n est pair, et en oubliant les prochains autres nombre pairs.
 
 5. **[TRACER]** cf: Tracer 1-3
+
+### _Tous les exercices sont déjà sur PLaTon grâce à la template PLTest_
