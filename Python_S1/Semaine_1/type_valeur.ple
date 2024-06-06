@@ -1,3 +1,6 @@
+// PYTHON 3, l'association d'une expression avec son type.
+
+
 // Documentation disponibmatchlistle ici : #docs/main/doc/programing/exercise/langage
 
 
@@ -6,8 +9,8 @@ sandbox = "python"
 
 // Définition des champs de réponse : #docs/components/
 
-picker = :wc-picker
-
+RadioGroup = :wc-radio-group
+RadioGroup.autoValidation = True
 
 // Affichage de documents théoriques : #docs/main/doc/programing/exercise/theories
 
@@ -38,22 +41,26 @@ builder==#!lang=python
 import random
 
 random_entier = random.randint(0, 10000)
-random_float = random.uniform(0.09, 9999.99)
+random_float = round(random.uniform(0.09, 9999.99), 3)
 random_bool = bool(random.getrandbits(1))
 random_char = random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
 random_string = random.choice(("\"Bonjour\"", "\"UGE\"", "\"Informatique\""))
 
-
+random_list = random.sample([random_bool, random_float,
+                            random_entier, random_char, random_string, None, []],
+                            random.randint(1, 7))
 
 random_list = [
                 random_string, 
                 f"\"{random_entier}\"", random_entier,
-                f"\"{random_bool}\"", random_bool,
+                random_bool,
                 f"\"{random_float}\"", random_float,
-                f"\"{random_char}\""
+                f"\"{random_char}\"",
+                random_list,
+                None
                 ]
 
-all_types = ["str", "int", "float", "list", "tuple", "range", "dict", "set", "bool" ,"None"]
+all_types = ["str", "int", "float", "list", "bool" ,"NoneType"]
 
 
 """
@@ -74,44 +81,65 @@ all_types = ["str", "int", "float", "list", "tuple", "range", "dict", "set", "bo
 random_choix = random.choice(random_list)
 
 # à modifier si vous voulez prendre plus ou moins
-random_types = random.sample(all_types, 5)
+random_types = random.sample(all_types, 4)
 
-if (str(type(random_choix)).split()[1][1:-2]) not in random_types:
-  random_types[-1] = (str(type(random_choix)).split()[1][1:-2])
+# if (str(type(random_choix)).split()[1][1:-2]) not in random_types:
+#   random_types[-1] = (str(type(random_choix)).split()[1][1:-2])
 
-random.shuffle(random_types)
 
-picker['items'] =  random_types
+
+RadioGroup['items'] =  all_types
 sol = str(type(random_choix)).split()[1][1:-2]
 
 # la solution
 bons_reponses = f"Le type de <b>{random_choix}</b> est <b>{str(type(random_choix)).split()[1][1:-2]}</b><br>"
 une_expression = f"<b>{random_choix}</b>"
 
+
+plusgrade = sum([ 1 if x == 100 else 0 for x in meta['grades'] ])
+
+statement=  f"<b>{random_choix}</b> <br/> Tentatives {nsucc}/{ntry}"
+
 ==
 
+ntry = 0
+nsucc=0
 
 grader==
 
-grade = 0
+ntry += 1
+
+
+grade = -1
 
 count = 0
 
 feedback['type'] = "error"
-feedback['content'] = "Mauvaise réponse, votre score: "
+feedback['content'] = f"Mauvaise réponse, {bons_reponses} "
 
 # // ce if serve à verifier si l'étudiant a choisi quelque chose
-# if not picker['selection']:
+# if not RadioGroup['selection']:
 #   raise Exception("Vous devez choisir quelque chose")
 
-if (picker['selection']):
-  if (picker['selection'] == sol):
-    grade = 100
+if (RadioGroup['selection']):
+  if (RadioGroup['selection'] == sol):
+    
+    grade = 1
+    nsucc += 1
     feedback['type'] = "success"
-    feedback['content'] = "Bonne réponse, votre score: "
+    feedback['content'] = "Bonne réponse  "
+  else:
+    grade = 0
 
 
-feedback['content'] += f"{str(int(grade))} points"
+RadioGroup['selection'] = None
+
+if nsucc > 3 and (nsucc / ntry) > 0.5:
+  grade=100
+  feedback['content'] = "Bravo, vous pouvez passer à l'exercise suivant!"
+else:
+  exec(builder)
+
 ==
 
 
@@ -119,12 +147,10 @@ title==
 Deviner le type de l'expression suivante:
 ==
 
-statement ==
-{{une_expression}}
-==
+
 
 form==
-{{picker}}
+{{RadioGroup}}
 ==
 
 solution==
