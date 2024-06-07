@@ -14,8 +14,9 @@ qcm pour voir si il sait comment compiler et exécuter un fichier java
 - Faire un exercice pour que les étudiants distinguent les types primitfs et les types objets.
 - Qcm : types primitifs ou types Objets ? Pourquoi on choisit l'un ou l'autre selon la situation.
 
-1) Caractéristiques des types objets
-5) 
+4) Caractéristiques des types objets
+   
+6) 
    
 
 
