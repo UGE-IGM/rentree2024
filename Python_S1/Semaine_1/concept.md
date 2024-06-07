@@ -23,7 +23,7 @@ Bien choisir les noms
 Bien choisir les noms 
 ## La Pile et le Tas
 
-Qu-est ce que la pile ? Qu-est ce que el tas ?
+Qu-est ce que la pile ? Qu-est ce que el tas ?           ( PAS D'IDEES )
 
 ## La notion d'état
 
