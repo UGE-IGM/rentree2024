@@ -9,8 +9,11 @@ cf. bonours.py
 
 qcm pour voir si il sait comment compiler et exécuter un fichier java
 
-3) Caractéristiques des Types primitifs types objets
 
+
+
+3) Caractéristiques des Types primitifs types objets
+utiliser : [blabla](https://github.com/Rentree2024/rentree2024/blob/main/java/Semaine_1/bblablbatypes.md) pour faire l'exercice 
 - Faire un exercice pour que les étudiants distinguent les types primitfs et les types objets.
 - Qcm : types primitifs ou types Objets ? Pourquoi on choisit l'un ou l'autre selon la situation.
 - -
@@ -22,4 +25,4 @@ qcm pour voir si il sait comment compiler et exécuter un fichier java
 6) Différence types primitifs et types objets
    
 
-[blabla](https://github.com/Rentree2024/rentree2024/blob/main/java/Semaine_1/bblablbatypes.md))
+
