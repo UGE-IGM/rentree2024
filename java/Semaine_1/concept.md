@@ -13,10 +13,13 @@ qcm pour voir si il sait comment compiler et exécuter un fichier java
 
 - Faire un exercice pour que les étudiants distinguent les types primitfs et les types objets.
 - Qcm : types primitifs ou types Objets ? Pourquoi on choisit l'un ou l'autre selon la situation.
+- -
+- Quand faut-il les utiliser ? :
+    dès qu'un champ peut être primitif on utilise le type primitif
 
 4) Caractéristiques des types objets
    
-6) 
+6) Différence types primitifs et types objets
    
 
-
+[https://github.com/Rentree2024/rentree2024/blob/main/java/Semaine_1/bblablbatypes.md](blabla)
