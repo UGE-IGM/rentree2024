@@ -13,13 +13,23 @@ Objectif que les étudiants soient capables de reconnaitre le type d'une constan
 
 ## Les expressions constantes 
 
-Objectif que les étudiants soient capables de calculer une expression constante et d'identifier son type.
-
-## les identifiants 
-
-Comment différencier les mots clefs des identifants (par coeur).
-
-Qu'un identifiant ne contient que des caractères alphanumériques et le souligné, et ne commence pas par un chiffre.
+Objectif que les étudiants soient capables de calculer une expression constan
+Name	Last commit message	Last commit date
+parent directory
+..
+evalC.py
+creation avalC
+3 hours ago
+expression.py
+modifcation expression.py
+2 hours ago
+expressions_type.py
+les expressions et types en Python
+now
+identifiants.py
+initial commit
+2 days ago
+ commence pas par un chiffre.
 
 
 ********==========================********
