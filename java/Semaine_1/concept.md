@@ -22,4 +22,4 @@ qcm pour voir si il sait comment compiler et exécuter un fichier java
 6) Différence types primitifs et types objets
    
 
-[https://github.com/Rentree2024/rentree2024/blob/main/java/Semaine_1/bblablbatypes.md](blabla)
+[blabla](https://github.com/Rentree2024/rentree2024/blob/main/java/Semaine_1/bblablbatypes.md))
