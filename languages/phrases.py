@@ -97,11 +97,11 @@ phrases = [
      "pt": "Paul comeu uma pêra na cadeira.",
      "pl": "Paul zjadł gruszkę na krześle."},
     
-    {"fr": "Julie a dormi derrière le buffet.", 
-     "en": "Julie slept behind the buffet.", 
-     "es": "Julie durmió detrás del buffet.",
-     "pt": "Julie dormiu atrás do buffet.",
-     "pl": "Julie spała za bufetem."},
+    {"fr": "Le chat a dormi derrière le buffet.", 
+     "en": "The cat slept behind the buffet.", 
+     "es": "El gato durmió detrás del buffet.",
+     "pt": "O gato dormiu atrás do buffet.",
+     "pl": "Kota spała za bufetem."},
     
     {"fr": "Pierre a marché sur la route avec une poire.", 
      "en": "Pierre walked on the road with a pear.", 
@@ -163,9 +163,7 @@ phrases = [
      "pt": "Um gato estava atrás do buffet.",
      "pl": "Kot był za bufetem."},
     
-    {"fr": "Julie a mang
-
-é une poire sur la chaise.", 
+    {"fr": "Julie a mangé une poire sur la chaise.", 
      "en": "Julie ate a pear on the chair.", 
      "es": "Julie comió una pera en la silla.",
      "pt": "Julie comeu uma pêra na cadeira.",
