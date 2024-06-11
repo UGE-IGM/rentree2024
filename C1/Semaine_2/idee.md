@@ -2,4 +2,4 @@
 - Des fonctions recursives,
 - Nbs d'entiers pairs dans une suite d'entiers exemple: 12796 -> on renvoie 2
 - Nbs occurence ...
-- Quelques exos par rapport aux gestions d'erreurs, code erreur (**Important**; au moins deux exo)
+- Quelques exos par rapport aux gestions d'erreurs, code erreur (**Important**; au moins deux exos)
