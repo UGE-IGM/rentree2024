@@ -12,7 +12,7 @@ peut en cas d’erreur renvoyer une valeur qui n’est pas dans cet
 ensemble. Eexmple:  La somme d'une liste d'entiers positifs. On renvoie -1 si le tableau est vide.
 
 
-# Recursivité
+# Recursivité et boucles for[while] 
 
 Quelques fonctions classiques...
 
