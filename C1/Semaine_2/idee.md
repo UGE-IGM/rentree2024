@@ -1,1 +1,4 @@
-Des exercices relatifs aux pointeurs, echange d'elements, ; 
+- Des exercices relatifs aux pointeurs, echange d'elements ...;
+- Des fonctions recursives,
+- Nbs d'entiers pairs dans une suite d'entiers exemple: 12796 -> on renvoie 2
+- Nbs occurence ...
