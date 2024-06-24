@@ -1,1 +1,1 @@
-# Les chaines de caractères
+# Les chaines de caractères en C
